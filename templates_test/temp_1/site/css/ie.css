@@ -1,3 +1,0 @@
-body { min-width: 960px;}
-.btn { behavior:url(js/PIE.htc); position:absolute;}
-[class*="list-services-"]:hover {filter: alpha(opacity = 50); border-bottom: none; background-color: #ffffff;}

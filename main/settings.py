@@ -27,6 +27,10 @@ SECRET_KEY = 'django-insecure-pk-%fj$aava0506+qkif)0(&ei2zy5*r$12-=@!kr*@&+=h-l2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = [
+#     'www.UlanUdeAnimalFeeds.pythonanywhere.com',
+#     'UlanUdeAnimalFeeds.pythonanywhere.com',
+#     ]
 ALLOWED_HOSTS = []
 
 

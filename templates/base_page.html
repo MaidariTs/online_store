@@ -76,12 +76,77 @@
      </head>
 <body id="top">
 
-  {% include 'includes/header.html' %}
+  <!--==============================header=================================-->
+  
+  <header id="header">
+      <div class="container">
+          <div class="row">
+              <div class="grid_5">
+                  <ul class="top-links">
+                      <li><a href="/">home</a></li>
+                  </ul>
+              </div>
+              <div class="grid_7">
+                  <div class="tel">Телефон:
+                      <div class="phone"><i class="fa fa-phone"></i>+7 991 427 0536</div>
+                      <span>&nbsp;</span>
+                      <a href="mailto:tmaidari@mail.ru"><i class="fa fa-envelope-o"></i>tmaidari@mail.ru</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="border"></div>
+      <div class="container">
+          <div class="row">
+              <div class="grid_6">
+                <h1>
+                  <a href="/"><img src="{% static '/images/logo_main_3.png' %}" width="1200" height="250" alt="logo"></a>
+                </h1>
+              </div>
+          </div>
+          <div id="stuck_container">
+              <div class="row">
+                  <div class="grid_12">
+                      <nav>
+                          <ul class="sf-menu">
+                              <li class="current"><a href="/">О нас</a></li>
+                              <li><a href="/feeds/">Корма</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+              </div>
+          </div>           
+      </div>
+  </header>
 
   {% block container %}
   {% endblock container %}
 
-  {% include 'includes/footer.html' %}
+<!--==================footer=======================-->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <style>
+                .fig {
+                text-align: center; /* Выравнивание по центру */ 
+                }
+            </style>
+            <h1>
+                <p><a name="down"></a></p>
+                <p class="fig"><img src="{% static '/images/number_2.png' %}" width="1000" height="300" alt="number"></a></p>
+            </h1>
+            <div class="grid_12">
+                <div class="border1"></div>
+                <div class="copy">
+                    <a class="link6" href="/">Корма для животных Улан-Удэ</a>
+                    <span>&nbsp;&copy;&nbsp;</span>
+                    <span id="copyright-year"></span>&nbsp;
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
