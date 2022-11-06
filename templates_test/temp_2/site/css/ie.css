@@ -1,0 +1,39 @@
+
+.camera_wrap .camera_pag .camera_pag_ul li > span,
+.circle,
+.link,
+.link1,
+.link5,
+.more_block,
+.social-links li a { behavior:url(js/PIE.htc); }
+
+#form .invalid .error-message, 
+#form .empty .empty-message { display: block; }
+
+#form .error-message,
+#form .empty-message { display: none; }
+
+.social-links li a:hover i,
+.social-links1 li a:hover i {line-height: 10px;}
+
+.copy > span {margin-bottom: 0px;}
+
+#search .link1 {margin-top: 0px;}
+#search input {line-height: 32px;}
+
+.section .link2 {font-size: 16px;}
+
+.link5 {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+
+.sf-menu li ul li ul {left: 151px;}
+
+.camera_caption .title {padding-right: 10px;margin-left: -10px;}
+
+.link:hover {background: #a3a2a2;}
+
+
+

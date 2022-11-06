@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+     <title>Home</title>
+     <meta charset="utf-8">
+     <meta name = "format-detection" content = "telephone=no" />
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+     <link rel="stylesheet" href="css/camera.css"> 
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/font-awesome.css">
+     <link href="css/owl.carousel.css" rel="stylesheet">
+     <link rel="stylesheet" href="css/stuck.css">     
+     <script src="js/jquery.js"></script>
+     <script src="js/jquery-migrate-1.2.1.js"></script>
+     <script src="js/jquery.easing.1.3.js"></script>
+     <script src="js/script.js"></script>
+     <script src="search/search.js"></script>        
+     <script src="js/jquery.equalheights.js"></script>
+     <script src="js/jquery.ui.totop.js"></script>
+     <script src="js/owl.carousel.js"></script>      
+     <script src="js/superfish.js"></script>
+     <script src="js/jquery.mobilemenu.js"></script>
+     <script src="js/camera.js"></script>
+     <script src="js/tmStickUp.js"></script>     
+     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="js/jquery.mobile.customized.min.js"></script>
+     <!--<![endif]-->
+     <!--[if lt IE 8]>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+        <link href='//fonts.googleapis.com/css?family=Asap:400' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Asap:700' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:400' rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+       <div style=' clear: both; text-align:center; position: relative;'>
+         <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+           <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+         </a>
+      </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <![endif]-->
+        <script>
+            $(document).ready(function(){
+                jQuery('#camera_wrap').camera({
+                    loader: true,
+                    pagination: true,
+                    minHeight: '180',
+                    thumbnails: false,
+                    height: '42.7%',
+                    caption: true,
+                    navigation: true,
+                    fx:  'scrollBottom'
+                });
+                $("#owl").owlCarousel({
+                    items : 8,
+                    itemsDesktop : [1299, 8],
+                    itemsTablet: [995, 6],
+                    itemsTabletSmall: [767, 4],
+                    itemsMobile : [479, 3],
+                    lazyLoad : true,
+                    pagination: false,
+                    navigation : true
+                });
+                /*Back to Top*/
+                $().UItoTop({ easingType: 'easeOutQuart' });
+             });
+        </script>
+     </head>
+<body id="top">
+
+<!--==============================header=================================-->
+
+<header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="grid_5">
+                    <ul class="top-links">
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="#">links</a></li>
+                        <li><a href="#">locations</a></li>
+                        <li><a href="#">news</a></li>
+                    </ul>
+                </div>
+                <div class="grid_7">
+                    <div class="tel">24/7 Support:
+                        <div class="phone"><i class="fa fa-phone"></i>+1 959 603 6035</div>
+                        <span>&nbsp;</span>
+                        <a href="#"><i class="fa fa-envelope-o"></i>mail@demolink.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border"></div>
+        <div class="container">
+            <div class="row">
+                <div class="grid_6">
+                    <h1><a href="index.html"><img src="images/logo.png" alt=""></a></h1>
+                </div>
+                <div class="grid_6">
+                    <div class="search_box">
+                        <form id="search" action="search.php" method="GET">
+                            <input type="text" name="s" value="" onfocus="if (this.value == '') {this.value=''}" onblur="if (this.value == '') {this.value=''}">
+                            <a onClick="document.getElementById('search').submit()" class="link1">search</a>
+                            <div class="clear"></div>      
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="stuck_container">
+                <div class="row">
+                    <div class="grid_12">
+                        <nav>
+                            <ul class="sf-menu">
+                                <li class="current"><a href="index.html">About Us</a></li>
+                                <li><a href="index-1.html">Feeds</a>
+                                    <ul>
+                                        <li><a href="#">Vestibulum iaculis</a></li>
+                                        <li><a href="#">Fusce euismod conuat</a>
+                                            <ul>
+                                                <li><a href="#">Pellentesque sed</a></li>
+                                                <li><a href="#">Aliquam congue ferm</a></li>
+                                                <li><a href="#">Mauris accum</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pellentesque</a></li>
+                                   </ul>
+                                </li>
+                                <li><a href="index-2.html">Farm & Ranch</a></li>
+                                <li><a href="index-3.html">Wildlife & Garden</a></li>
+                                <li><a href="index-4.html">Contacts</a></li>
+                                <li><a href="index-5.html">Blog</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid_6">
+                    <p class="welcome">Welcome to our site!</p>
+                </div>
+                <div class="grid_6">
+                    <ul class="social-links">
+                        <li><a href="#" class="col1"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="col2"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="col3"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#" class="col4"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#" class="col5"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </header>
+
+
+<!--=======slider================================-->
+
+<div class="container">
+    <div class="row">
+        <div class="grid_12">
+            <div class="slider_wrapper">
+                <div id="camera_wrap">
+                   <div data-src="images/slide1.jpg">
+                       <div class="camera_caption">
+                            <div class="title">Offering everything you need <br>for your farm!</div>
+                       </div>
+                   </div>
+                   <div data-src="images/slide2.jpg">
+                        <div class="camera_caption">
+                           <div class="title">A complete line of the highest <br>quality products for cows</div>
+                       </div>
+                   </div>
+                   <div data-src="images/slide3.jpg">
+                        <div class="camera_caption">
+                           <div class="title">The best source for animal <br>nutrition needs</div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--=======content================================-->
+
+<div id="content">
+<div class="p2">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div id="owl" class="owl-carousel">
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico1.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico2.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico3.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico4.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico5.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico6.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico7.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico8.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico1.jpg" alt=""></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="images/page1_ico2.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="p50">
+    <div class="container">
+        <div class="row">     
+            <div class="grid_4">
+                <h2>Our Feeds</h2>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/page1_img1.jpg" alt="">
+                    </div>
+                    <a href="#" class="link2">Quisque nulla Vestibulum</a>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit <br>voluptatem accusantium doloremque.</p><br>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa fa-circle"></i>Livestock</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Small Animals</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Show Feeds</a></li>
+                    </ul>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa fa-circle"></i>Horse Feeds</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Cattle Feeds</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Pets & Supplies</a></li>
+                    </ul>
+                    <a href="#" class="link">view all</a>                    
+                </div>
+            </div>
+            <div class="grid_4">
+                <h2>Farm & Ranch</h2>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/page1_img2.jpg" alt="">
+                    </div>
+                    <a href="#" class="link2">porta vel, scelerisque</a>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit <br>voluptatem accusantium doloremque.</p><br>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa fa-circle"></i>Waterers</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Trailers</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Tack</a></li>
+                    </ul>
+                    <ul class="list">
+                        <li><a href="#"><i class="fa fa-circle"></i>Pasture</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Hay & Shavings</a></li>
+                        <li><a href="#"><i class="fa fa-circle"></i>Gates & Panels</a></li>
+                    </ul>
+                    <a href="#" class="link">view all</a>                    
+                </div>
+            </div>
+            <div class="grid_4">
+                <h2>Wildlife</h2>
+                <div class="box">
+                    <div class="image">
+                        <img src="images/page1_img3.jpg" alt="">
+                    </div>
+                    <a href="#" class="link2">eget, malesuada at, neque</a>
+                    <p>Nemo enim ipsam voluptatetas sit aspernat aut odit aut fugit, sed quia consequuntur magni.</p><br>
+                    <p>Dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non nuam eius modi tempora incidunt ut labore.</p>
+                    <a href="#" class="link">read more</a>                    
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+</div>
+<div class="p58">
+    <div class="container">
+        <div class="row">
+            <div class="grid_8 brdr">
+                <h2>Meeting All of Your Rural Needs</h2>
+                <div class="grid_4 alpha">
+                    <div class="block">
+                        <div class="bl_l">
+                            <a href="#" class="circle"><img src="images/page1_ico9.png" alt=""></a>
+                        </div>
+                        <div class="bl_r">
+                            <a href="#" class="link3">Vestibulum iac lacinia est Proin dictum elem</a>
+                            <p>Quisque nulla. Vestlum libero nisl, porta vel, scelerist, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vm ante ipsum primis in aucibus.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="bl_l">
+                            <a href="#" class="circle"><img src="images/page1_ico10.png" alt=""></a>
+                        </div>
+                        <div class="bl_r">
+                            <a href="#" class="link3">Vestibulum iac lacinia est Proin dictum elem</a>
+                            <p>Quisque nulla. Vestlum libero nisl, porta vel, scelerist, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vm ante ipsum primis in aucibus.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="bl_l">
+                            <a href="#" class="circle"><img src="images/page1_ico11.png" alt=""></a>
+                        </div>
+                        <div class="bl_r">
+                            <a href="#" class="link3">Vestibulum iac lacinia est Proin dictum elem</a>
+                            <p>Quisque nulla. Vestlum libero nisl, porta vel, scelerist, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vm ante ipsum primis in aucibus.</p>
+                        </div>
+                    </div>                                        
+                </div>
+                <div class="grid_4 omega">
+                    <div class="block">
+                        <div class="bl_l">
+                           <a href="#" class="circle"><img src="images/page1_ico12.png" alt=""></a>
+                        </div>
+                        <div class="bl_r">
+                            <a href="#" class="link3">Vestibulum iac lacinia est Proin dictum elem</a>
+                            <p>Quisque nulla. Vestlum libero nisl, porta vel, scelerist, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vm ante ipsum primis in aucibus.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="bl_l">
+                            <a href="#" class="circle"><img src="images/page1_ico13.png" alt=""></a>
+                        </div>
+                        <div class="bl_r">
+                            <a href="#" class="link3">Vestibulum iac lacinia est Proin dictum elem</a>
+                            <p>Quisque nulla. Vestlum libero nisl, porta vel, scelerist, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vm ante ipsum primis in aucibus.</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="bl_l">
+                            <a href="#" class="circle"><img src="images/page1_ico14.png" alt=""></a>
+                        </div>
+                        <div class="bl_r">
+                            <a href="#" class="link3">Vestibulum iac lacinia est Proin dictum elem</a>
+                            <p>Quisque nulla. Vestlum libero nisl, porta vel, scelerist, malesuada at, neque. Vivamus eget nibh. Etiam cursus leo vel metus. Nulla facilisi. Aenean nec eros. Vm ante ipsum primis in aucibus.</p>
+                        </div>
+                    </div>                                        
+                </div>
+                <div class="grid_8 alpha">
+                    <div class="more_block">
+                        <div class="bl_l">
+                        <p>We are interested in hearing from you.</p>
+                        <span>Write about your primary interest right now!</span>
+                        </div>
+                        <div class="bl_r"><a href="#" class="link5">more</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid_4">
+                <h2>They Say</h2>
+                <div class="block1">
+                     <div class="bl_l">
+                         <div class="img"><img src="images/page1_img4.jpg" alt=""></div>
+                     </div>
+                     <div class="bl_r">
+                         <p>“Sed ut pepicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasiarchitec. <a href="#" class="link4">read more ></a></p>               
+                         <div>
+                             <span><a href="#">Robert Frost</a></span>
+                             <span><i>A Successful Farmer</i></span>
+                         </div>
+                     </div>
+                </div>
+                <div class="block1">
+                     <div class="bl_l">
+                         <div class="img"><img src="images/page1_img5.jpg" alt=""></div>
+                     </div>
+                     <div class="bl_r">
+                         <p>“Sed ut pepicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasiarchitec. <a href="#" class="link4">read more ></a></p>
+                         <div>
+                             <span><a href="#">Andy Taylor</a></span>
+                             <span><i>A Successful Farmer</i></span>
+                         </div>
+                     </div>
+                </div>
+                <div class="block1">
+                     <div class="bl_l">
+                         <div class="img"><img src="images/page1_img6.jpg" alt=""></div>
+                     </div>
+                     <div class="bl_r">
+                         <p>“Sed ut pepicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasiarchitec. <a href="#" class="link4">read more ></a></p>
+                         <div>
+                             <span><a href="#">John White</a></span>
+                             <span><i>A Successful Farmer</i></span>
+                         </div>
+                     </div>
+                </div>
+                <div class="block1">
+                     <div class="bl_l">
+                         <div class="img"><img src="images/page1_img7.jpg" alt=""></div>
+                     </div>
+                     <div class="bl_r">
+                         <p>“Sed ut pepicia iste natus error sit voluptatem accusantium doloremque laudantium, totrem aperiam, eaque ipsa quae ab illo invento eritatis et quasiarchitec. <a href="#" class="link4">read more ></a></p>
+                         <div>
+                             <span><a href="#">Sam Palmer</a></span>
+                             <span><i>A Successful Farmer</i></span>
+                         </div>
+                     </div>
+                </div>                                                           
+            </div>            
+        </div>
+    </div>
+</div>
+    <div class="map">
+        <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094" style="border:0"></iframe>
+    </div>
+<div class="p49 center">
+    <div class="container">
+        <div class="row">     
+            <div class="grid_4">
+                <h3>about us</h3>
+                    <ul class="list1">
+                        <li><a href="index.html">About Us</a></li>
+                        <li><a href="index-1.html">Feeds</a></li>
+                        <li><a href="index-2.html">Farm & Ranch</a></li>
+                        <li><a href="index-3.html">Wildlife & Garden</a></li>
+                        <li><a href="index-4.html">Contacts</a></li>
+                        <li><a href="index-5.html">Blog</a></li>
+                    </ul>
+            </div>
+            <div class="grid_4">
+                <h3>How to Buy</h3>
+                <ul class="list1">
+                    <li><a href="#">Pre-Order/Pick-up</a></li>
+                    <li><a href="#">On Farm Store</a></li>
+                    <li><a href="#">Restaurants/Retail</a></li>
+                    <li><a href="#">Home Delivery</a></li>
+                    <li><a href="#">Wholesale Program</a></li>
+                    <li><a href="#">Gift Certificates</a></li>
+                    <li><a href="#">Articles & Reviews</a></li>
+                </ul>
+            </div>          
+            <div class="grid_4">
+                <h3>Get it touch</h3>
+                    <address class="address">
+                        <p>8901 Marmora Road<br> Glasgow, DO4 89GR.</p>
+                        <dl>
+                        <dt></dt>
+                            <dd><span>Freephone:&nbsp;</span>+1 800 559 6580</dd>
+                            <dd><span>Telephone:&nbsp;</span>+1 959 603 6035</dd>
+                            <dd><span>FAX:&nbsp;</span>+ 1 504 889 9898</dd>
+                        </dl><br>
+                       <span class="col6">E-mail: </span><span><a href="#">mail@demolink.org</a></span>                 
+                    </address>
+            </div>  
+        </div>
+    </div>
+</div>            
+</div>
+
+<!--==================footer=======================-->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="grid_12">
+                <div class="border1"></div>
+                <div class="copy">
+                    <a class="link6" href="index.html">SATI. Feed and Farm Supplies.</a>
+                    <span>&nbsp;&copy;&nbsp;</span>
+                    <span id="copyright-year"></span>&nbsp;
+                    <a class="link7" href="index-6.html">Privacy policy</a> <!--{%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
