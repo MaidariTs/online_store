@@ -3,7 +3,7 @@ nav>.sf-menu {
 	z-index: 990;
 	text-align: center;
 	position: relative;
-	background: #a0a0a0;
+	/* background: #a0a0a0; */
 	border-top: 2px solid #8a8a8a;
 }
 
@@ -102,7 +102,7 @@ nav {
 	padding: 17px 0 21px;
 	width: 174px;
 	text-align: center;
-	background: #a0a0a0;
+	/* background: #a0a0a0; */
 }
 
 .sf-menu li ul li{

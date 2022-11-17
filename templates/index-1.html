@@ -1,10 +1,10 @@
-    {% extends 'base_page.html' %}
-    {% load static %}
+{% extends 'base_page.html' %}
+{% load static %}
 
 
-    {% block title %}
-        Feeds
-    {% endblock title %}
+{% block title %}
+    Корма
+{% endblock title %}
 
 
 {% block container %}
@@ -12,50 +12,91 @@
 <!--=======content================================-->
 <style type="text/css">
     BODY
-    .grid_8 {
-     color: #fff; /* Цвет текста */
+    .section{
+	    border: 2px solid #fff; /* Толщина, стильи цвет рамки */
+	    padding: 1px; /* Отсступ от рамки */
     }
-    .grid_4 {
-     color: #fff; /* Цвет текста */
+
+    .content {
+        position: relative;
+        z-index: 2;
+        color: #fff;
+    }
+
+    .bg {
+        position: absolute;
+        z-index: 1;
+        left: -10px;
+        top: -10px;
+        right: -10px;
+        bottom: -10px;
+        filter: blur(5px);
+        background: #fff url("{% static '/images/landscape-animals-food.jpg' %}") repeat-y;
+        background-size: cover;
     }
 </style>
-
+<div class="bg"></div>
+<div class="content">
 <div id="content">
 <div class="p36">
     <div class="container">
         <div class="row">
-            <div class="grid_8">
-                <h2>В ПРОДАЖЕ:</h2>
+            <div class="grid_12">
+                <h3 class="title-side title-side-center">В ПРОДАЖЕ</h3>
+                <br><br><br>
                 <section class="section">
                     <div class="image1"><img src="{% static '/images/cow_feed_1.jpg' %}" width="400" height="250" alt=""></div>
-                    <a href="#"class="link2">Корм &nbsp;для КРС</a>
-                    <p>Стоимость и количество в наличии уточняйте по телефону</p>
-                    <a href="#down" class="link">number</a>
+                    <br>
+                        <h5>Корм &nbsp;для КРС</h5>
+                    <br>
+                        <h4>(Стоимость и количество товара уточняйте по телефону)</h4>
+                    <a href="#down" class="link">Позвонить</a>
                 </section>
                 <section class="section">
                     <div class="image1"><img src="{% static '/images/pig_feed_1.png' %}" width="400" height="250" alt=""></div>
-                    <a href="#" class="link2">Корм &nbsp;для свиней</a>
-                    <p>Стоимость и количество в наличии уточняйте по телефону</p><br>
-                    <p></p>
-                    <a href="#down" class="link">number</a>
+                    <br>
+                        <h5>Корм &nbsp;для свиней</h5>
+                    <br>
+                        <h4>(Стоимость и количество товара уточняйте по телефону)</h4>
+                    <a href="#down" class="link">Позвонить</a>
                 </section>
                 <section class="section">
                     <div class="image1"><img src="{% static '/images/horse_feed.jpg' %}" width="400" height="250" alt=""></div>
-                    <a href="#" class="link2">Корм &nbsp;для лошадей</a>
-                    <p>Стоимость и количество в наличии уточняйте по телефону</p><br>
-                    <p></p>
-                    <a href="#down" class="link">number</a>
+                    <br>
+                        <h5>Корм &nbsp;для лошадей</h5>
+                    <br>
+                        <h4>(Стоимость и количество в наличии уточняйте по телефону)</h4>
+                    <a href="#down" class="link">Позвонить</a>
                 </section>
                 <section class="section">
                     <div class="image1"><img src="{% static '/images/dog_feed.jpg' %}" width="400" height="250" alt=""></div>
-                    <a href="#" class="link2">Корм &nbsp;для других животных</a>
-                    <p>Стоимость и количество в наличии уточняйте по телефону</p><br>
-                    <p></p>
-                    <a href="#down" class="link">number</a>
-                </section>           
-            </div>
-            <div class="grid_4">
-                <h2>НАВИГАЦИЯ</h2>
+                    <br>
+                        <h5>(Корм &nbsp;для других животных)</h5>
+                    <br>
+                        <h4>Стоимость и количество в наличии уточняйте по телефону</h4>
+                    <a href="#down" class="link">Позвонить</a>
+                </section>
+                <br><br>
+                <div class="divider"></div>
+                <footer id="footer">
+                    <div class="container">
+                        <div class="row">
+                                <div class=grid_12>
+                                    <h3 class="title-side title-side-left">Корма для животных</h3>
+                                    <p><a name="down"></a></p>
+                                    <h3 class="title-side title-side-center">+7 (995) 658 24 13</h3>
+                                    <h3 class="title-side title-side-right">ДНТ "Багульник" 1 квартал</h3>
+                                </div>
+                            <div class="grid_12">
+                                <!-- <div class="border1"></div>
+                                <div class="divider"></div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>           
+            <!-- <div class="grid_4">
+                <h3 class="title-side title-side-center">НАВИГАЦИЯ</h3>
                 <ul class="list p16">
                     <li><a href="#"><i class="fa fa-circle"></i>Корм для КРС</a></li>
                     <li><a href="#"><i class="fa fa-circle"></i>Корм для свиней</a></li>
@@ -63,10 +104,12 @@
                     <li><a href="#"><i class="fa fa-circle"></i>Корм для других животных</a></li>
                 </ul>   
                 <div class="p50">
-                </div>     
-            </div>  
-        </div>
+                </div>  -->   
+            </div>   
+        </div>          
     </div>
+</div>
+</div>
 </div>            
 </div>
 

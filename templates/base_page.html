@@ -1,11 +1,11 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="ru">
-     <head>
-     <title>
-        {% block title %}
-          Home Page
-        {% endblock title %}
+    <head>
+    <title>
+    {% block title %}
+      Home Page
+     {% endblock title %}
     </title>
      <meta charset="utf-8">
      <meta name = "format-detection" content = "telephone=no" />
@@ -78,23 +78,90 @@
 <body id="top">
     <style>
         body {
-        background: #141414 url("{% static '/images/landscape-animals-food.jpg' %}") repeat-y; /* Фоновый цвет и фоновый рисунок*/
+        background: #fff url("{% static '/images/landscape-animals-food.jpg' %}") repeat-y; /* Фоновый цвет и фоновый рисунок*/
         background-repeat: repeat-x, repeat-y;
         background-position: left, right;
         background-attachment: fixed, fixed;
-        text-align: left; /* Выравнивание блока по центру */
-        color: #000000; /*Цвет текста на странице*/
+        /* text-align: left; Выравнивание блока по центру */
+        /*color: #fff; Цвет текста на странице*/
+        font-size: 2rem; /* Размер текста на страницах */
         }
         A {
-          color: #0820d7; /* Цвет ссылок */
+          color: #e72e64; /* Цвет ссылок */
         }
         A:visited {
-          color: #0820d7; /* Цвет посещенных ссылок */
+          color: #e72e64; /* Цвет посещенных ссылок */
         }
         A:active {
-          color: #7B68EE; /* Цвет активных ссылок */
+          color: #e72e64; /* Цвет активных ссылок */
         }
-      </style>
+
+    
+        /* Настройки */ 
+        .mask{
+            --uiMaskClipPath: var(--maskClipPath);
+            box-sizing: var(--maskBoxSizing, border-box);
+            display: var(--maskDisplay, inline-flex);
+            padding: var(--maskStrokeThickness, 3px);
+            clip-path: var(--uiMaskClipPath);
+            background-color: var(--maskStrokeColor, currentColor);
+            --maskStrokeColor: #ab7445; /* Цвет рамки */
+            --maskStrokeThickness: 5px; /* Ширина рамки */ 
+        }
+        .mask-img{
+            max-width: 100%;
+            display: block;
+            clip-path: var(--uiMaskClipPath);
+        }
+        .mask, 
+        .mask-img{
+            transition: clip-path var(--maskAnimationDuration, .2s) var(--maskAnimationTimingFunction, ease-out);
+        }
+        /* Четвертая рамка */
+        .mask-four{
+            --maskClipPath: polygon(0 50%, 50% 0, 100% 50%, 50% 100%);
+        }
+        .mask-four:hover, 
+        .mask-four:focus{
+            --maskClipPath: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .title-side {
+        overflow: hidden; /* Скрываем линии, чтобы они не выходили за ширину блока заголовка */
+        margin: 30px 0; /* Отступ сверху и снизу */
+        font-size: 1em; /* Размер шрифта */
+        color: #fff; /* Цвет заголовка */
+        }
+        .title-side-left {
+            text-align: left;
+        }
+        /* Заголовок по центру */
+        .title-side-center {
+            text-align: center;
+        }
+        /* Заголовок справа */
+        .title-side-right {
+            text-align: right;
+        }
+        .title-side:before,
+        .title-side:after {
+            content: '';	
+            display: inline-block;	
+            vertical-align: middle; 
+            box-sizing: border-box;
+            width: 100%; /* Устанавливаем ширину в 100%, что сделает делает линию равной ширине тега заголовка */
+            height: 1px; /* Высота линий */
+            background: #e72e64; /* Цвет линий */
+            border: solid #fff; /* Добавляем к линиям границу с цветом основного фона заголовка, для отступа от текста */
+            border-width: 0 30px; /* Отступ от текста */
+        }
+        .title-side:before {
+            margin-left: -100%;
+        }
+        .title-side:after {
+            margin-right: -100%;
+        }
+    </style>
 
   <!--==============================header=================================-->
   
@@ -109,7 +176,7 @@
               <div class="grid_7">
                   <div class="tel">Телефон:
                       <div class="phone"><i class="fa fa-phone"></i>+7 995 658 24 13</div>
-                      <span>&nbsp;</span>
+                        <span>&nbsp;</span>
                       <a href="mailto:tmaidari@mail.ru"><i class="fa fa-envelope-o"></i>tmaidari@mail.ru</a>
                   </div>
               </div>
@@ -118,11 +185,16 @@
       <div class="border"></div>
       <div class="container">
           <div class="row">
-              <div class="grid_6">
-                <h1>
-                  <a href="/"><img src="{% static '/images/frame2_logo.png' %}" width="1170" height="230" alt="logo"></a>
-                </h1>
-              </div>
+            <div class=grid_12>
+                <h3 class="title-side title-side-left">Корма для животных</h3>
+                <h3 class="title-side title-side-center">+7 (995) 658 24 13</h3>
+                <h3 class="title-side title-side-right">ДНТ "Багульник" 1 квартал</h3>
+            </div>
+              <!-- <div class="grid_6">
+                    <h1>
+                        <a><img src="{% static '/images/frame2_logo_white.png' %}" width="1170" height="230" alt="logo" class="image-border"/></a>
+                    </h1>
+              </div> -->
           </div>
           <div id="stuck_container">
               <div class="row">
@@ -148,39 +220,27 @@
 <footer id="footer">
     <div class="container">
         <div class="row">
-            <style>
-                .fig {
-                text-align: center; /* Выравнивание по центру */ 
-                }
-            </style>
-            <style>
-                BODY
-                .grid_12 {
-                 text-align: center;
-                 color: #fff; /* Цвет текста */
-                 
-                }
-               </style>
-              </head>
-              <body>
-               <div class=grid_12>
-                <p><h5>
-                + 7 (995) 658 24 13
-                </h5>
-                </p>
-               </div>
-              </body>
+                <div class=grid_12>
+                    <h3 class="title-side title-side-left">Корма для животных</h3>
+                    <h3 class="title-side title-side-center">+7 (995) 658 24 13</h3>
+                    <h3 class="title-side title-side-right">ДНТ "Багульник" 1 квартал</h3>
+                </div>
             <div class="grid_12">
-                <div class="border1"></div>
+                <style>
+                    .grid_12 {
+                      color: #fff
+                    }
+                </style>
+                <!-- <div class="border1"></div>
+                <div class="divider"></div> -->
                 <div class="copy">
                     <a class="link6" href="/">Корма для сельхоз животных Улан-Удэ</a>
-                    <span>&nbsp;&copy;&nbsp;</span>
+                        <span>&nbsp;&copy;&nbsp;</span>
                     <span id="copyright-year"></span>&nbsp;
                 </div>
             </div>
         </div>
     </div>
 </footer>
-
 </body>
 </html>

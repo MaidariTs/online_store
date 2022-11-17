@@ -2,48 +2,46 @@
 {% load static %}
 
 {% block title %}
-  Home page
+  О нас
 {% endblock title %}
 
 {% block container %}
 
 <!--=======content================================-->
-
 <div id="content">
 <div class="p50">
     <div class="container">
         <div class="row">
             <div class="grid_4">
-                <h2>АССОРТИМЕНТ</h2>
+                <h3 class="title-side title-side-center">АССОРТИМЕНТ</h3>
                 <div class="box">
-                    <div class="image">
-                        <a href="/feeds/"><img src="{% static '/images/feed_krs_1.jpg' %}" width="370" height="230" alt="">
-                        </a>
+                    <div class="mask mask-four mask-four-frame">
+                        <a href="/feeds/"><img src="{% static '/images/feed_krs_1.jpg' %}" width="370" height="230" alt=""class="image-border2"/></a>
                     </div>
-                    <a href="/feeds/" class="link">view all</a>                    
                 </div>
             </div>
             <div class="grid_4">
             </div>
             <div class="grid_4">
-                <h2>АДРЕС МАГАЗИНА</h2>
+                <h3 class="title-side title-side-center">АДРЕС МАГАЗИНА</h3>
                 <div class="box">
-                    <div class="image">
-                        <a href="#maps"><img src="{% static '/images/kiosk_1.jpg' %}" width="370" height="230" alt="">
-                        </a>
-                    </div>
-                    <p></p><a href="#maps" class="link">view all</a></p>                 
+                    <div class="mask mask-four mask-four-frame">
+                        <a href="#maps"><img src="{% static '/images/kiosk_1.jpg' %}" width="370" height="230" alt="" class="image-border2"/></a>
+                    </div>                
                 </div>
             </div>
         </div>
         <p><a name="maps"></a></p>
-        <div class="divider"></div>
+        <!-- <div class="divider"></div> -->
     </div>
 </div>
+    <div class="border"></div>
     <div class="map">
         <iframe class="wide_map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8853.661037915172!2d107.52575338852505!3d51.736892226412905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sru!2sru!4v1668693119288!5m2!1sru!2sru" style="border:0"></iframe>
     </div>
+    <div class="border"></div>
+    <br>
     <p><a name="down"></a></p>
-    <div class="divider"></div>          
+    <!-- <div class="divider"></div> -->
 </div>
 {% endblock container %}
