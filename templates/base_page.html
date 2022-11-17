@@ -9,8 +9,8 @@
     </title>
      <meta charset="utf-8">
      <meta name = "format-detection" content = "telephone=no" />
-     <link rel="icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon">
-     <link rel="shortcut icon" href="{% static '/images/favicon.ico' %}" type="image/x-icon" />
+     <link rel="icon" href="{% static '/images/favicon2.ico' %}" type="image/x-icon">
+     <link rel="shortcut icon" href="{% static '/images/favicon2.ico' %}" type="image/x-icon" />
      <link rel="stylesheet" href="{% static '/css/camera.css' %}"> 
      <link rel="stylesheet" href="{% static '/css/style.css' %}">
      <link rel="stylesheet" href="{% static '/css/font-awesome.css' %}">
@@ -27,8 +27,9 @@
      <script src="{% static '/js/superfish.js' %}"></script>
      <script src="{% static '/js/jquery.mobilemenu.js' %}"></script>
      <script src="{% static '/js/camera.js' %}"></script>
-     <script src="{% static '/js/tmStickUp.js' %}"></script>     
-     <!--[if (gt IE 9)|!(IE)]><!-->
+     <script src="{% static '/js/tmStickUp.js' %}"></script>
+
+     <!-- [if (gt IE 9)|!(IE)]><!-->
      <!-- <script src=js/jquery.mobile.customized.min.js></script> -->
      <!--<![endif]-->
      <!--[if lt IE 8]>
@@ -46,7 +47,7 @@
     <!--[if lt IE 9]>
         <script src="js/html5shiv.js"></script>
         <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
-    <![endif]-->
+    <![endif] -->
         <script>
             $(document).ready(function(){
                 jQuery('#camera_wrap').camera({
@@ -75,6 +76,25 @@
         </script>
      </head>
 <body id="top">
+    <style>
+        body {
+        background: #141414 url("{% static '/images/landscape-animals-food.jpg' %}") repeat-y; /* Фоновый цвет и фоновый рисунок*/
+        background-repeat: repeat-x, repeat-y;
+        background-position: left, right;
+        background-attachment: fixed, fixed;
+        text-align: left; /* Выравнивание блока по центру */
+        color: #000000; /*Цвет текста на странице*/
+        }
+        A {
+          color: #0820d7; /* Цвет ссылок */
+        }
+        A:visited {
+          color: #0820d7; /* Цвет посещенных ссылок */
+        }
+        A:active {
+          color: #7B68EE; /* Цвет активных ссылок */
+        }
+      </style>
 
   <!--==============================header=================================-->
   
@@ -88,7 +108,7 @@
               </div>
               <div class="grid_7">
                   <div class="tel">Телефон:
-                      <div class="phone"><i class="fa fa-phone"></i>+7 991 427 0536</div>
+                      <div class="phone"><i class="fa fa-phone"></i>+7 995 658 24 13</div>
                       <span>&nbsp;</span>
                       <a href="mailto:tmaidari@mail.ru"><i class="fa fa-envelope-o"></i>tmaidari@mail.ru</a>
                   </div>
@@ -100,7 +120,7 @@
           <div class="row">
               <div class="grid_6">
                 <h1>
-                  <a href="/"><img src="{% static '/images/logo_main_3.png' %}" width="1200" height="250" alt="logo"></a>
+                  <a href="/"><img src="{% static '/images/frame2_logo.png' %}" width="1170" height="230" alt="logo"></a>
                 </h1>
               </div>
           </div>
@@ -122,6 +142,7 @@
   {% block container %}
   {% endblock container %}
 
+
 <!--==================footer=======================-->
 
 <footer id="footer">
@@ -132,14 +153,27 @@
                 text-align: center; /* Выравнивание по центру */ 
                 }
             </style>
-            <h1>
-                <p><a name="down"></a></p>
-                <p class="fig"><img src="{% static '/images/number_2.png' %}" width="1000" height="300" alt="number"></a></p>
-            </h1>
+            <style>
+                BODY
+                .grid_12 {
+                 text-align: center;
+                 color: #fff; /* Цвет текста */
+                 
+                }
+               </style>
+              </head>
+              <body>
+               <div class=grid_12>
+                <p><h5>
+                + 7 (995) 658 24 13
+                </h5>
+                </p>
+               </div>
+              </body>
             <div class="grid_12">
                 <div class="border1"></div>
                 <div class="copy">
-                    <a class="link6" href="/">Корма для животных Улан-Удэ</a>
+                    <a class="link6" href="/">Корма для сельхоз животных Улан-Удэ</a>
                     <span>&nbsp;&copy;&nbsp;</span>
                     <span id="copyright-year"></span>&nbsp;
                 </div>

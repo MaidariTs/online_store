@@ -10,16 +10,25 @@
 {% block container %}
 
 <!--=======content================================-->
+<style type="text/css">
+    BODY
+    .grid_8 {
+     color: #fff; /* Цвет текста */
+    }
+    .grid_4 {
+     color: #fff; /* Цвет текста */
+    }
+</style>
 
 <div id="content">
 <div class="p36">
     <div class="container">
         <div class="row">
             <div class="grid_8">
-                <h2>В продаже:</h2>
+                <h2>В ПРОДАЖЕ:</h2>
                 <section class="section">
                     <div class="image1"><img src="{% static '/images/cow_feed_1.jpg' %}" width="400" height="250" alt=""></div>
-                    <a href="#" class="link2">Корм &nbsp;для КРС</a>
+                    <a href="#"class="link2">Корм &nbsp;для КРС</a>
                     <p>Стоимость и количество в наличии уточняйте по телефону</p>
                     <a href="#down" class="link">number</a>
                 </section>
@@ -38,7 +47,7 @@
                     <a href="#down" class="link">number</a>
                 </section>
                 <section class="section">
-                    <<div class="image1"><img src="{% static '/images/dog_feed.jpg' %}" width="400" height="250" alt=""></div>
+                    <div class="image1"><img src="{% static '/images/dog_feed.jpg' %}" width="400" height="250" alt=""></div>
                     <a href="#" class="link2">Корм &nbsp;для других животных</a>
                     <p>Стоимость и количество в наличии уточняйте по телефону</p><br>
                     <p></p>
@@ -46,7 +55,7 @@
                 </section>           
             </div>
             <div class="grid_4">
-                <h2>Навигация</h2>
+                <h2>НАВИГАЦИЯ</h2>
                 <ul class="list p16">
                     <li><a href="#"><i class="fa fa-circle"></i>Корм для КРС</a></li>
                     <li><a href="#"><i class="fa fa-circle"></i>Корм для свиней</a></li>
